@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        // React Component
+        function App() {
+            
+
+            return (
+                
+                <div className="app">
+                   
+                    <h1>Learn Web Development</h1>
+                    <div className="container">
+                    <p>The MDN Curriculum provides a structured guide to the essential skills and practices for being a successful front-end developer, along with recommended learning resources.</p>
+                    </div>
+                    <div className="container">
+                    <p>HTTP APIs in general are sometimes colloquially referred to as RESTful APIs, RESTful services, or REST services, although they don't necessarily adhere to all REST constraints. Beginners can assume a REST API means an HTTP service that can be called using standard web libraries and tools.
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">The rest of MDN</a>The basic idea of REST is that a resource, e.g. a document, is transferred via well-recognized, language-agnostic, and reliably standardized client/server interactions. Services are deemed RESTful when they adhere to these constraints.</p>
+                    </div>
+                    <div className="container">
+                    <p>RESTful APIs are a way of building web services that follow the REST architectural style. REST stands for Representational State Transfer and it's a set of guidelines for designing web services. RESTful APIs use HTTP methods to perform actions on resources, such as GET, POST, PUT, DELETE, etc. They are typically used to interact with web services that provide data in a standardized format, such as JSON or XML.</p>
+                </div>
+                </div>
+            );
+        }
+
+        // Render React App into the DOM
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
